@@ -99,51 +99,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-   /* @Test
-    public void shouldSetMaxNumber() {
-        Radio cond = new Radio();
-
-        cond.setCurrentSoundVolume(100);
-
-        int expected = 100;
-        int actual = cond.currentSoundVolume;
-
-        Assertions.assertEquals(expected, actual);
-    }
-    @Test
-    public void shouldSetMinNumber() {
-        Radio cond = new Radio();
-
-        cond.setCurrentSoundVolume(0);
-
-        int expected = 0;
-        int actual = cond.currentSoundVolume;
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    public void shouldSetMinVolume() {
-        Radio cond = new Radio();
-
-        cond.setCurrentSoundVolume(0);
-
-        int expected = 0;
-        int actual = cond.currentSoundVolume;
-
-        Assertions.assertEquals(expected, actual);
-    }
-    @Test
-    public void shouldSetMaxVolume() {
-        Radio cond = new Radio();
-
-        cond.setCurrentSoundVolume(100);
-
-        int expected = 100;
-        int actual = cond.currentSoundVolume;
-
-        Assertions.assertEquals(expected, actual);
-    }*/
+   
     @Test
     public void shouldSet51Volume() {
         Radio cond = new Radio();
