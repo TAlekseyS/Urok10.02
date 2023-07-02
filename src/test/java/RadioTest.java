@@ -140,4 +140,47 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldSetNotZeroVolume() {
+        Radio cond = new Radio();
+        cond.setCurrentSoundVolume(1);
+
+        cond.setPervSoundVolume();
+
+
+        int expected = 0;
+        int actual = cond.currentSoundVolume;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldSetMaxVolume() {
+        Radio cond = new Radio();
+        cond.setCurrentSoundVolume(101);
+
+        cond.setNextSoundVolume();
+
+
+        int expected = 1;
+        int actual = cond.currentSoundVolume;
+
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    public void shouldSetMinVolume() {
+        Radio cond = new Radio();
+        cond.setCurrentSoundVolume(-101);
+
+        cond.setNextSoundVolume();
+
+
+        int expected = 1;
+        int actual = cond.currentSoundVolume;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+
+
 }

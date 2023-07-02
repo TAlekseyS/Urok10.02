@@ -42,9 +42,9 @@ public class Radio {
 
     public int currentSoundVolume;
 
-    public int getCurrentSoundVolume() {
-        return currentSoundVolume;
-    }
+    /* public int getCurrentSoundVolume() {
+         return currentSoundVolume;
+     }*/
     public void setCurrentSoundVolume(int newCurrentSoundVolume) {
         if (newCurrentSoundVolume < 0) {
             return;
@@ -65,6 +65,7 @@ public class Radio {
         }
 
     }
+
     public void setPervSoundVolume() {
         int actualCurrentSoundVolume = currentSoundVolume;
         setCurrentSoundVolume(actualCurrentSoundVolume);
